@@ -1,0 +1,15 @@
+current directory: /Users/connorriley/Desktop/Desktop Files/0 School/Fall 20/CSCE 431/assignment-4-heroku-txconnorriley/Library/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+/Users/connorriley/.rubies/ruby-2.7.1/bin/ruby -I /Users/connorriley/.rubies/ruby-2.7.1/lib/ruby/2.7.0 -r ./siteconf20200917-81560-khhusj.rb extconf.rb
+creating Makefile
+
+current directory: /Users/connorriley/Desktop/Desktop Files/0 School/Fall 20/CSCE 431/assignment-4-heroku-txconnorriley/Library/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/connorriley/Desktop/Desktop Files/0 School/Fall 20/CSCE 431/assignment-4-heroku-txconnorriley/Library/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/connorriley/Desktop/Desktop Files/0 School/Fall 20/CSCE 431/assignment-4-heroku-txconnorriley/Library/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20200917-81560-fb4ou9

@@ -1,0 +1,15 @@
+current directory: /Users/connorriley/Desktop/Desktop Files/0 School/Fall 20/CSCE 431/assignment-4-heroku-txconnorriley/Library/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.4.8/ext/bootsnap
+/Users/connorriley/.rubies/ruby-2.7.1/bin/ruby -I /Users/connorriley/.rubies/ruby-2.7.1/lib/ruby/2.7.0 -r ./siteconf20200917-81560-6vjhtz.rb extconf.rb
+creating Makefile
+
+current directory: /Users/connorriley/Desktop/Desktop Files/0 School/Fall 20/CSCE 431/assignment-4-heroku-txconnorriley/Library/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.4.8/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/connorriley/Desktop/Desktop Files/0 School/Fall 20/CSCE 431/assignment-4-heroku-txconnorriley/Library/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.4.8/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/connorriley/Desktop/Desktop Files/0 School/Fall 20/CSCE 431/assignment-4-heroku-txconnorriley/Library/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.4.8/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20200917-81560-1yh9tgd/bootsnap

@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <style>
+            .center {
+                text-align: center;
+
+                justify-content: center;
+                align-items: center;
+                height: 300px;
+
+                margin: auto;
+                width: 50%;
+                display: flex;
+            }
+
+            .topnav {
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .topnav a.active {
+                background-color: #800000;
+                color: white;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .button {
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+
+            .buttonCreate {
+                background-color: #800000; 
+                color: white;
+                border: 2px solid black;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="topnav">
+            <%= link_to "Home", books_path%>
+            <%= link_to "New", new_book_path %>
+        </div>
+    </body>
+
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Price</th>
+            <th>Publish Date</th>
+            <th></th>
+        </tr>
+ 
+        <% @books.each do |book| %>
+            <tr>
+                <td><%= book.title %></td>
+                <td><%= book.author %></td>
+                <td><%= book.genre %></td>
+                <td><%= book.price %></td>
+                <td><%= book.published_date %></td>
+                <td><%= link_to 'Check Out', book_path(book) %></td>
+            </tr>
+        <% end %>
+    </table>
+</html>

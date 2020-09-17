@@ -1,0 +1,72 @@
+<head>
+  <style>
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #800000;
+      color: white;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;ß
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topnav">
+    <%= link_to "Home", books_path%>
+    <%= link_to "New", new_book_path %>
+  </div>
+ 
+    <%= form_with(model: @book, local: true) do |form| %>
+    
+    <p>
+      <%= form.label :title %><br>
+      <%= form.text_field :title %>
+    </p>
+  
+    <p>
+      <%= form.label :author %><br>
+      <%= form.text_field :author %>
+    </p>
+
+    <p>
+      <%= form.label :genre %><br>
+      <%= form.text_field :genre %>
+    </p>
+
+    <p>
+      <%= form.label :price %><br>
+      <%= form.text_field :price %>
+    </p>
+
+    <p>
+      <%= form.label :published_date %><br>
+      <%= form.text_field :published_date %>
+    </p>
+  
+    <p>
+      <%= form.submit %>
+    </p>
+    
+    <% end %>
+</body>
